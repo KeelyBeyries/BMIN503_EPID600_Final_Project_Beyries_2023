@@ -1,35 +1,104 @@
----
-title: "Tracking comorbidity between depression and substance abuse over the past ten years"
-subtitle: "BMIN503/EPID600 Final Project"
-author: "Keely Beyries"
-format: html
-editor: visual
-number-sections: true
-embed-resources: true
+
 ---
 
-------------------------------------------------------------------------
 
 Use this template to complete your project throughout the course. Your Final Project presentation will be based on the contents of this document. Replace the title/name above and text below with your own, but keep the headers. Feel free to change the theme and other display settings, although this is not required.
 
-## Overview {#sec-overview}
+Overview
+Substance use disorder(SUD) Using the 2021 NSDUH data, this project aims to track the prevalence of substance use disorder in the adult population of the United States.
 
-This project aims to track the prevalence of depression for the past ten years. Then it is explored if there is a relationship between depression and substance abuse rates over the past decade.
-
-## Introduction {#sec-introduction}
-
-According to the World Health Organization(WHO), mental health issues disorders have risen 13% over the past ten years. This project aims to focus on the prevalence of depression in the US over the past ten years. Substance abuse issues are often linked with mental health issues such as depression. It will be explored if a relationship exists between depression and substance abuse over the past ten years.
+Introduction
+According to the World Health Organization(WHO), mental health issues disorders have risen 13% over the past ten years. This project aims to focus on the prevalence of depression in the US. Substance abuse issues are often linked with mental health issues such as depression. It will be explored if a relationship exists between substance use and depression among individuals.
 
 This project may be helpful to those who work in fields related to mental health, substance abuse treatment or epidemiology. The link between substance abuse and mental health disorders can often be hard to study because it can be difficult to tell if one was caused by the other and in some cases which disorder occurred first. Tracking if rates of depression and substance abuse rates are correlated over the past decade may give some insight into how common the comorbidity between these two disorders may be.
 
-## Methods {#sec-methods}
+Methods
+Data set
 
+The data used for this project are from the 2021 National Survey on Drug Use and Health. This survey intends to collect information from US civilians aged 12 and older.
+
+Libraries
+
+ 
+Show in New Window 
+ 
+ 
+── Attaching core tidyverse packages ────────────────────────────────────────────────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     ── Conflicts ──────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package to force all conflicts to become errors
+Attaching package: ‘scales’
+
+The following object is masked from ‘package:purrr’:
+
+    discard
+
+The following object is masked from ‘package:readr’:
+
+    col_factor
+
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Run All Chunks AboveRun Current Chunk
+Pre-analysis
+
+Before any analysis could be done, variables were identified and the data was cleaned.
+
+Run All Chunks AboveRun Current Chunk
+Data cleaning consisted of keeping only respondents of age 18 or older and only those who had responded whether or not they had received any treatment for substance use issues.
+
+Run All Chunks AboveRun Current Chunk
+ 
+Show in New Window 
+ 
+ 
+
+
+ 
+
+Run All Chunks AboveRun Current Chunk
+ 
+Show in New Window 
+ 
+ 
+
+Run All Chunks AboveRun Current Chunk
+ 
+Show in New Window 
+ 
+ 
+
+
+ 
+
+Run All Chunks AboveRun Current Chunk
+ 
+Show in New Window 
+ 
+ 
+
+
+ 
+
+Run All Chunks AboveRun Current Chunk
 Describe the data used and general methodological approach used to address the problem described in the @sec-introduction. Subsequently, incorporate full R code necessary to retrieve and clean data, and perform analysis. Be sure to include a description of code so that others (including your future self) can understand what you are doing and why.
 
-## Results {#sec-results}
-
+Results
 Describe your results and include relevant tables, plots, and code/comments used to obtain them. You may refer to the @sec-methods as needed. End with a brief conclusion of your findings related to the question you set out to address. You can include references if you'd like, but this is not required.
 
-## Conclusion
-
+Conclusion
 This the conclusion. The @sec-results can be invoked if you'd like.
+
+References
+
+Drake RE, Mueser KT, Brunette MF. Management of persons with co-occurring severe mental illness and substance use disorder: program implications. World Psychiatry. 2007 Oct
